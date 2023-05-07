@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Generate Quote</title>
+  </head>
+  <body>
+    <form id="add-quote-form">
+        <label for="quote-input">Quote:</label>
+        <input type="text" id="quote-input" name="quote">
+        <br>
+        <button type="submit">Add Quote</button>
+    </form>
+    <form id="filter-form">
+        <label for="author-input">Filter by author:</label>
+        <label for="author-input">Author:</label>
+        <input type="text" id="author-input" name="author">
+        <button type="submit">Filter</button>
+    </form>
+    <div id="quote-section"></div>
+    <section id="quote-section"></section>
+    <button id="generate-quote-btn">Generate Quote</button>
+
+    <div id="quote-info-section">
+        <button id="char-count-btn">Character count (including spaces)</button>
+        <button id="char-count-btn-no-spaces-btn">Character count (excluding spaces)</button>
+        <button id="word-count-btn">Word count</button>
+        <button id="like-btn">Like</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

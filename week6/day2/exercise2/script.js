@@ -1,0 +1,3 @@
+function winBattle() {
+  return true;
+}

@@ -1,0 +1,49 @@
+body {
+    background-image: url("https://images.pexels.com/photos/2361952/pexels-photo-2361952.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: white;
+}
+
+h4 {
+    text-align: center;
+
+}
+
+img {
+    padding-left: 38%;
+}
+
+.table1 {
+    border: 5px solid red;
+    text-align: center;
+    color: red;
+    display: flex;
+    padding: 1px;
+    margin: 5px;
+}
+
+.th1 {
+    border: none;
+}
+
+.table2 {
+    text-align: center;
+    padding: 10px;
+    display: flex;
+}
+
+th, td {
+    border: 5px solid whitesmoke;
+    text-align: center;
+}
+
+th {
+    padding: 10px;
+}
+
+td {
+    padding: 20px;
+}

@@ -1,0 +1,41 @@
+body {
+
+}
+
+.header {
+    background-image: url(bg.jpeg);
+    height: 400px;
+    width: 100%;
+}
+
+.placeholder {
+    padding-left: 50px;
+}
+
+h1 {
+    font-size: 30;
+    text-align: center;
+    padding-top: 20px;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .item {
+    flex-basis: calc(100%/3);
+    height: 200px;
+    box-sizing: unset;
+    border: 1px solid ;
+  }
+  p {
+    text-align: center;
+    padding: 30px;
+    margin: 10%;
+    font-size: 25px;
+    animation: mymove 5s infinite;
+  }

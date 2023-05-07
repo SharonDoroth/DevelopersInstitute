@@ -1,0 +1,8 @@
+let user = {
+username: 'johnjohn',
+password:'123456'
+}
+let database =[];
+database.push(user);
+console.log(database);
+
