@@ -1,18 +1,48 @@
-function sortCarInventoryByYear(carInventory) {
-  return carInventory.sort((car1, car2) => car1.car_year - car2.car_year);
-}
-
-const inventory = [
-  { id: 1, car_make: "Lincoln", car_model: "Navigator", car_year: 2009 },
-  { id: 2, car_make: "Mazda", car_model: "Miata MX-5", car_year: 2001 },
-  { id: 3, car_make: "Honda", car_model: "Accord", car_year: 1983 },
+const gameInfo = [
   {
-    id: 4,
-    car_make: "Land Rover",
-    car_model: "Defender Ice Edition",
-    car_year: 2010,
+    username: "john",
+    team: "red",
+    score: 5,
+    items: ["ball", "book", "pen"],
   },
-  { id: 5, car_make: "Honda", car_model: "Accord", car_year: 1995 },
+  {
+    username: "becky",
+    team: "blue",
+    score: 10,
+    items: ["tape", "backpack", "pen"],
+  },
+  {
+    username: "susy",
+    team: "red",
+    score: 55,
+    items: ["ball", "eraser", "pen"],
+  },
+  {
+    username: "tyson",
+    team: "green",
+    score: 1,
+    items: ["book", "pen"],
+  },
 ];
 
-console.log(sortCarInventoryByYear(inventory));
+// 1
+const usernames = [];
+gameInfo.forEach((player) => {
+  usernames.push(player.username + "!");
+});
+console.log(usernames);
+
+// 2
+const winners = [];
+gameInfo.forEach((player) => {
+  if (player.score > 5) {
+    winners.push(player.username);
+  }
+});
+console.log(winners);
+
+// 3
+const totalScore = gameInfo.reduce((sum, player) => {
+  return sum + player.score;
+}, 0);
+console.log("Total score:", totalScore);
