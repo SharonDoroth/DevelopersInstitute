@@ -1,0 +1,45 @@
+  body {
+    background-color: purple;
+    background-image: url("circuit-pattern.png");
+  }
+  .card {
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      background-color: aqua;
+      background-image: url("card-pattern.png");
+    }
+
+    .card h2 {
+      margin-top: 0;
+    }
+
+    .card p {
+      margin-bottom: 0;
+    }
+
+    .card img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .topnav {
+  overflow: hidden;
+  background-color: greenyellow;
+}
+
+.topnav input[type=text] {
+  float: right;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
