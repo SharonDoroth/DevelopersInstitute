@@ -1,0 +1,68 @@
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  color: #333;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+button[type="submit"] {
+  padding: 10px 15px;
+  background-color: #fca5a5;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.listTasks {
+  text-align: left;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.task input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.task label {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+}
+
+.task .delete-btn {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #fca5a5;
+}
