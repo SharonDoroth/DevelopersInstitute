@@ -1,40 +1,31 @@
-class Video {
-  constructor(title, uploader, time) {
-    this.title = title;
-    this.uploader = uploader;
-    this.time = time;
-  }
+let client = "John";
 
-  watch() {
-    console.log(`${this.uploader} watched all ${this.time} seconds of ${this.title}!`);
-  }
-}
+const groceries = {
+  fruits: ["pear", "apple", "banana"],
+  vegetables: ["tomatoes", "cucumber", "salad"],
+  totalPrice: "20$",
+  other: {
+    payed: true,
+    meansOfPayment: ["cash", "creditCard"],
+  },
+};
 
-// Instantiate a new Video 
-const video1 = new Video("Video 1", "Uploader 1", 120);
-video1.watch();
+const displayGroceries = () => {
+  groceries.fruits.forEach((fruit) => {
+    console.log(fruit);
+  });
+};
 
-// Instantiate a second Video 
-const video2 = new Video("Video 2", "Uploader 2", 180);
-video2.watch();
+const cloneGroceries = () => {
+  let user = client;
+  client = "Betty";
+  let shopping = Object.assign({}, groceries);
+  shopping.totalPrice = "35$";
+  shopping.other.payed = false;
 
-// Bonus
-const videosData = [
-  { title: "Video 1", uploader: "Uploader 1", time: 120 },
-  { title: "Video 2", uploader: "Uploader 2", time: 180 },
-  { title: "Video 3", uploader: "Uploader 3", time: 90 },
-  { title: "Video 4", uploader: "Uploader 4", time: 240 },
-  { title: "Video 5", uploader: "Uploader 5", time: 150 },
-];
+  console.log("User:", user);
+  console.log("Shopping Object:", shopping);
+};
 
-// Loop through 
-const videos = [];
-for (const data of videosData) {
-  const video = new Video(data.title, data.uploader, data.time);
-  videos.push(video);
-}
-
-// Example 
-for (const video of videos) {
-  video.watch();
-}
+displayGroceries();
+cloneGroceries();
