@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("form").submit(function (e) {
+          e.preventDefault();
+
+          var name = $("#name").val();
+          var lastName = $("#last-name").val();
+
+          var data = {
+            name: name,
+            lastName: lastName,
+          };
+
+          var jsonString = JSON.stringify(data);
+
+          $("#result").text(jsonString);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required /><br /><br />
+
+      <label for="last-name">Last Name:</label>
+      <input type="text" id="last-name" required /><br /><br />
+
+      <input type="submit" value="Send" />
+    </form>
+
+    <div id="result"></div>
+  </body>
+</html>
