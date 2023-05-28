@@ -1,0 +1,23 @@
+body {
+    background-image: url(starts.jpeg);
+    background-size: cover;
+}
+.loading {
+  color: #007bff;
+}
+
+.error {
+  color: #dc3545;
+}
+p {
+    color: whitesmoke;
+    margin-left: 200px;
+}
+
+button {
+    margin-left: 200px;
+}
+
+h1 {
+    margin-left: 100px;
+}
