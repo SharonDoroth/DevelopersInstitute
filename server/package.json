@@ -1,0 +1,37 @@
+{
+        "name": "my-project",
+        "version": "1.5.0",
+        "description": "Express server project using compression",
+        "main": "src/index.js",
+        "scripts": {
+                "start": "node index.js",
+                "dev": "nodemon",
+                "lint": "eslint **/*.js"
+        },
+        "dependencies": {
+                "compression": "~1.7.4",
+                "express": "^4.18.2"
+        },
+        "devDependencies": {
+                "eslint": "^5.16.0",
+                "nodemon": "^2.0.22"
+        },
+        "repository": {
+                "type": "git",
+                "url": "https://github.com/osiolabs/example.git"
+        },
+        "author": "Jon Church",
+        "contributors": [
+                {
+                        "name": "Amber Matz",
+                        "email": "example@example.com",
+                        "url": "https://www.osiolabs.com/#team"
+                }
+        ],
+        "keywords": [
+                "server",
+                "osiolabs",
+                "express",
+                "compression"
+        ]
+}
