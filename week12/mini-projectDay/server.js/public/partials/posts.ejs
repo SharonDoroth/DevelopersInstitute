@@ -1,0 +1,11 @@
+<div class="posts-container">
+  <% feed.items.forEach((item) => { %>
+    <div class="post">
+      <h3><a href="https://www.thefactsite.com/<%= item.link %>"><%= item.title %></a></h3>
+      <p><strong>Publication Date:</strong> <%= item.pubDate %></p>
+      <p><strong>Creator:</strong> <%= item.creator %></p>
+      <p><strong>Category:</strong> <%= item.categories.join(', ') %></p>
+      <p><strong>Content:</strong> <%= item.contentSnippet %></p>
+    </div>
+  <% }); %>
+</div>
